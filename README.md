@@ -56,7 +56,7 @@ npm start
 
 ### Environment Variables
 
-If your app uses environment variables, create a `.env.local` file in the root:
+create a `.env.local` file in the root:
 
 ```env
 # .env.local
@@ -72,24 +72,6 @@ NEXT_PUBLIC_API_TOKEN=Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OWY3MGY0N2FmNWZlYj
   
 - **Netlify** or other Node hosts:  
   Set build commands and output directories properly (`npm run build`, `npm start`).
-
-## 📂 Folder Structure
-
-```bash
-.
-├── components/        # Shared UI components
-├── pages/             # Pages & API routes
-├── public/            # Static assets
-├── styles/            # CSS or SCSS modules
-├── utils/             # Utility functions
-├── .env.local         # Local environment variables
-├── next.config.js     # Next.js config
-└── README.md
-```
-
-## 📧 Submission Instructions
-
-Reply to the email you received with a link to this GitHub repo **or** attach the zipped project directory including this README file.
 
 ## 📃 License
 
