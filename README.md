@@ -60,7 +60,9 @@ If your app uses environment variables, create a `.env.local` file in the root:
 
 ```env
 # .env.local
-NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_API_BASE_URL=https://api.themoviedb.org/3
+NEXT_PUBLIC_API_TOKEN=Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OWY3MGY0N2FmNWZlYjczZDQxM2E4OGFmMTAwNzMxMCIsIm5iZiI6MTc0NDk2NTE3MC4xNDQsInN1YiI6IjY4MDIwZTMyOTFkM2Y2NWM1ZmFjZmVmZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.o2UQbEiE2NnFLCxQjiqaXrjRMmZ99kMdygqltMiZ9Ds
+
 ```
 
 ### Deployment Options
