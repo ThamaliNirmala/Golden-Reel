@@ -4,10 +4,11 @@ This is a [Next.js](https://nextjs.org/) application built as part of a coding c
 
 ## 🚀 Features
 
-- Server-side rendering (SSR) & static site generation (SSG)
-- API routes
-- Fully responsive UI
-- Easily deployable to Vercel, Netlify, or any Node environment
+- Popular/Trending movies
+- Top rated movies
+- Popular/Trending tv shows
+- Top rated tv shows
+- Search movie/tv show
 
 ## 📦 Getting Started
 
@@ -23,8 +24,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/ThamaliNirmala/Golden-Reel
+    cd Golden-Reel
     ```
 
 2. Install dependencies:
