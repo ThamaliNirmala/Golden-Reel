@@ -1,11 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import MovieSlider from "./common/MovieSlider";
 import { commonApis } from "../apis";
 import SectionHeader from "./common/SectionHeader";
 import { MotionShowingSlider } from "./common/MotionSlider";
+import { MovieProps } from "../types";
 
-export default function Movies() {
+export default function Movies({ searchQuery }: MovieProps) {
   const [moviesData, setMoviesData] = useState({
     popularMovies: [],
     topRatedMovies: [],
@@ -46,17 +47,37 @@ export default function Movies() {
     fetchData();
   }, []);
 
+  const filterByTitle = (list: any[]) => {
+    return list.filter(
+      (item) =>
+        item.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.name?.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  };
+
+  // Apply filtering using useMemo to avoid unnecessary recalculations
   const {
     popularMovies,
     topRatedMovies,
     upcomingMovies,
     popularTvShows,
     topRatedTvShows,
-  } = moviesData;
+  } = useMemo(() => {
+    if (!searchQuery) return moviesData;
+
+    return {
+      popularMovies: filterByTitle(moviesData.popularMovies),
+      topRatedMovies: filterByTitle(moviesData.topRatedMovies),
+      upcomingMovies: moviesData.upcomingMovies,
+      popularTvShows: filterByTitle(moviesData.popularTvShows),
+      topRatedTvShows: filterByTitle(moviesData.topRatedTvShows),
+    };
+  }, [moviesData, searchQuery]);
 
   return (
-    <>
+    <div className="mb-10">
       <MotionShowingSlider movies={upcomingMovies} />
+
       <SectionHeader
         title="Popular Movies"
         linkText="More"
@@ -92,6 +113,6 @@ export default function Movies() {
       <div className="mt-6">
         <MovieSlider movies={topRatedTvShows.slice(0, 10)} />
       </div>
-    </>
+    </div>
   );
 }

@@ -58,7 +58,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
               </div>
             ))
           ) : (
-            <p className="text-white">No movies available.</p>
+            <p className="text-black">No movies available.</p>
           )}
         </div>
       </CommonModalContainer>

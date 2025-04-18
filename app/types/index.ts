@@ -38,3 +38,12 @@ export interface CommonModalContainerProps {
   className?: string;
   [key: string]: any;
 }
+
+export type NavBarProps = {
+  searchQuery: string;
+  setSearchQuery: any;
+};
+
+export type MovieProps = {
+  searchQuery: string;
+};
