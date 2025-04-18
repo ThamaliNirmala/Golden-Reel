@@ -3,9 +3,7 @@ const plugin = require("tailwindcss/plugin");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}", // optional, if using the new app directory
+    "./app/**/*.{js,ts,jsx,tsx,html}", // optional, if using the new app directory
   ],
   darkMode: "class",
   important: true,

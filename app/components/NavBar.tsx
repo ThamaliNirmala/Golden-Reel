@@ -4,16 +4,55 @@ export default function NavBar() {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href="https://flowbite.com/"
+            href="https://goldenreel.com/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+            <svg
+              className="w-10"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+              xmlSpace="preserve"
+            >
+              <path
+                style={{ fill: "#003638" }}
+                d="M222.871,478.871H512v-36.141H344.398C301.98,442.729,222.871,441.926,222.871,478.871z"
+              />
+              <circle
+                style={{ fill: "#66E7EC" }}
+                cx="222.871"
+                cy="256"
+                r="222.871"
+              />
+              <circle
+                style={{ fill: "#00A1A7" }}
+                cx="222.871"
+                cy="256"
+                r="186.729"
+              />
+              <g>
+                <path
+                  style={{ fill: "#003638" }}
+                  d="M222.871,201.788c-29.892,0-54.212-24.319-54.212-54.212s24.319-54.212,54.212-54.212 s54.212,24.319,54.212,54.212S252.763,201.788,222.871,201.788z"
+                />
+                <path
+                  style={{ fill: "#003638" }}
+                  d="M331.294,201.788c29.892,0,54.212,24.319,54.212,54.212s-24.319,54.212-54.212,54.212 c-29.892,0-54.212-24.319-54.212-54.212S301.402,201.788,331.294,201.788z"
+                />
+                <path
+                  style={{ fill: "#003638" }}
+                  d="M168.659,256c0,29.892-24.319,54.212-54.212,54.212S60.235,285.892,60.235,256 s24.319-54.212,54.212-54.212S168.659,226.108,168.659,256z"
+                />
+                <path
+                  style={{ fill: "#003638" }}
+                  d="M222.871,310.212c29.892,0,54.212,24.319,54.212,54.212c0,29.892-24.319,54.212-54.212,54.212 s-54.212-24.319-54.212-54.212C168.659,334.531,192.978,310.212,222.871,310.212z"
+                />
+              </g>
+            </svg>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
+              Golden Reel
             </span>
           </a>
           <div className="flex md:order-2">
@@ -33,9 +72,9 @@ export default function NavBar() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                 />
               </svg>
@@ -107,9 +146,9 @@ export default function NavBar() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                   />
                 </svg>
